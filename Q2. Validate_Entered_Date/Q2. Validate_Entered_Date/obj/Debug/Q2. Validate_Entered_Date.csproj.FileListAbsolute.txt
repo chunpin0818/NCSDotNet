@@ -1,8 +1,0 @@
-C:\Users\User\OneDrive - Asia Pacific University\Desktop\Doc Net\Practical Assignments\C#\Q2. Validate_Entered_Date\Q2. Validate_Entered_Date\bin\Debug\Q2.Validate_Entered_Date.exe.config
-C:\Users\User\OneDrive - Asia Pacific University\Desktop\Doc Net\Practical Assignments\C#\Q2. Validate_Entered_Date\Q2. Validate_Entered_Date\bin\Debug\Q2.Validate_Entered_Date.exe
-C:\Users\User\OneDrive - Asia Pacific University\Desktop\Doc Net\Practical Assignments\C#\Q2. Validate_Entered_Date\Q2. Validate_Entered_Date\bin\Debug\Q2.Validate_Entered_Date.pdb
-C:\Users\User\OneDrive - Asia Pacific University\Desktop\Doc Net\Practical Assignments\C#\Q2. Validate_Entered_Date\Q2. Validate_Entered_Date\obj\Debug\Q2. Validate_Entered_Date.csproj.AssemblyReference.cache
-C:\Users\User\OneDrive - Asia Pacific University\Desktop\Doc Net\Practical Assignments\C#\Q2. Validate_Entered_Date\Q2. Validate_Entered_Date\obj\Debug\Q2. Validate_Entered_Date.csproj.SuggestedBindingRedirects.cache
-C:\Users\User\OneDrive - Asia Pacific University\Desktop\Doc Net\Practical Assignments\C#\Q2. Validate_Entered_Date\Q2. Validate_Entered_Date\obj\Debug\Q2. Validate_Entered_Date.csproj.CoreCompileInputs.cache
-C:\Users\User\OneDrive - Asia Pacific University\Desktop\Doc Net\Practical Assignments\C#\Q2. Validate_Entered_Date\Q2. Validate_Entered_Date\obj\Debug\Q2.Validate_Entered_Date.exe
-C:\Users\User\OneDrive - Asia Pacific University\Desktop\Doc Net\Practical Assignments\C#\Q2. Validate_Entered_Date\Q2. Validate_Entered_Date\obj\Debug\Q2.Validate_Entered_Date.pdb
