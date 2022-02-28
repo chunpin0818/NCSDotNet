@@ -1,0 +1,8 @@
+C:\Users\User\OneDrive - Asia Pacific University\Desktop\Doc Net\Practical Assignments\C#\Q4. Create_Class_Employees\Q4. Create_Class_Employees\obj\Debug\Q4. Create_Class_Employees.csproj.AssemblyReference.cache
+C:\Users\User\OneDrive - Asia Pacific University\Desktop\Doc Net\Practical Assignments\C#\Q4. Create_Class_Employees\Q4. Create_Class_Employees\obj\Debug\Q4. Create_Class_Employees.csproj.SuggestedBindingRedirects.cache
+C:\Users\User\OneDrive - Asia Pacific University\Desktop\Doc Net\Practical Assignments\C#\Q4. Create_Class_Employees\Q4. Create_Class_Employees\obj\Debug\Q4. Create_Class_Employees.csproj.CoreCompileInputs.cache
+C:\Users\User\OneDrive - Asia Pacific University\Desktop\Doc Net\Practical Assignments\C#\Q4. Create_Class_Employees\Q4. Create_Class_Employees\bin\Debug\Q4.Create_Class_Employees.exe.config
+C:\Users\User\OneDrive - Asia Pacific University\Desktop\Doc Net\Practical Assignments\C#\Q4. Create_Class_Employees\Q4. Create_Class_Employees\bin\Debug\Q4.Create_Class_Employees.exe
+C:\Users\User\OneDrive - Asia Pacific University\Desktop\Doc Net\Practical Assignments\C#\Q4. Create_Class_Employees\Q4. Create_Class_Employees\bin\Debug\Q4.Create_Class_Employees.pdb
+C:\Users\User\OneDrive - Asia Pacific University\Desktop\Doc Net\Practical Assignments\C#\Q4. Create_Class_Employees\Q4. Create_Class_Employees\obj\Debug\Q4.Create_Class_Employees.exe
+C:\Users\User\OneDrive - Asia Pacific University\Desktop\Doc Net\Practical Assignments\C#\Q4. Create_Class_Employees\Q4. Create_Class_Employees\obj\Debug\Q4.Create_Class_Employees.pdb
