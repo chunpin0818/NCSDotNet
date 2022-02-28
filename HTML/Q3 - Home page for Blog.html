@@ -1,0 +1,210 @@
+<!--Create a Home page for a Portfolio/Blog based website. -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Blog</title>
+        <style>
+            header{
+                background-color: white;
+                width:100%;
+            }
+            *{
+                box-sizing:border-box;
+            }
+            .header{
+                display:flex;
+                align-items:center;
+                flex-direction:row;
+                flex-wrap:wrap;
+                text-align:right;
+            }
+            
+            [class*=menubar-]{
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: x-large;
+                color:black;
+                padding:10px;
+                flex:10%;        
+            }
+            [class*=menubar-]:hover{     
+                color:blueviolet; 
+            }
+        
+            [class*=subbody-0]{
+                display:flex;
+                flex-direction: row;
+                align-items:center;
+                height:500px;
+            }
+
+            [class*=subbody-0]:hover{
+                background-color:aliceblue
+            }
+
+            [class*=subbody-1]{
+                width:50%;
+                text-align: center;
+            }
+
+            [class*=subbody-2]{
+                width:50%;
+                text-align: center;
+            }
+
+            [class*=subbody-3]{
+                width:50%;
+                text-align: center;
+            }
+
+            .body img{
+                height:350px;
+            }
+
+            .footer{
+                position:absolute;
+                left:0px;
+                right:0px;
+                background-color: black;
+                color:white;
+                display:flex;
+                align-items:center;
+                flex-direction:row;
+                padding:50px;
+            }
+            [class*=footer-]{
+                float:left;
+                width:50%;
+            }
+            .footer li:hover{
+                color:blue;
+            }
+
+            a:hover{
+                color:purple;
+            }
+            
+            @media screen and (max-width:631px){
+                .header{
+                    flex-direction:column;
+                }
+                [class *="col-"]{
+                    width:100%;
+                }
+                
+                
+                .footer{
+                    flex-direction:column;
+                }
+                [class *="footer-"]{
+                    width:100%;
+                }
+                
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="header">
+                <div class="menubar-1">
+                    <img src="Images/blog.png" style="float:left; height:80px">
+                </div>
+                <div class="menubar-2">Home</div>
+                <div class="menubar-3">About</div>
+                <div class="menubar-4">Blog</div>
+                <div class="menubar-5">Contact</div>
+                <div class="menubar-6">              
+                    <form id="form1" action="http://www.google.com" method="get" target="_blank">
+                        <input type="search" value="Search Something...">
+                        <input type="submit" value="Search">
+                    </form>
+                    
+                </div>
+            </div>
+            <hr>
+        </header>
+
+
+        <section>
+            <div class="body">
+                <div class="subbody-01">
+                    <div class="subbody-1-1">
+                        <p><b>June 03, 2019 | By Ilia Smirnov</b></p>
+                        <h1>Text-To-Speech Synthesis in .NET</h1>
+                        <p>Computer-based speech synthesis is hardly new. Telecom companies invested in TTS to overcome the limitations of pre-recorded messages, and military researchers have experimented with voice prompts and alerts to simplify complex control interfaces.</p>
+                        <a href="https://docs.microsoft.com/en-us/archive/msdn-magazine/2019/june/speech-text-to-speech-synthesis-in-net">View more -></a>  
+                    </div>
+    
+                    <div class="subbody-1-2">
+                        <img src="Images/speech.png">
+                    </div>
+                </div>   
+
+                <hr>
+
+                <div class="subbody-02">
+                    
+                    <div class="subbody-2-1">
+                        <img src="Images/C.png">
+                    </div>
+
+                    <div class="subbody-2-2">
+                        <p><b>February 04, 2022 | 19 contributors</b></p>
+                        <h1>The history of C#</h1>
+                        <p>The C# language relies on types and methods in what the C# specification defines as a standard library for some of the features. The .NET platform delivers those types and methods in a number of packages. One example is exception processing. </p>
+                        <a href="https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-version-history">View more -></a>            
+                    </div>
+                </div>
+                
+                <hr>
+
+                <div class="subbody-03">
+                    <div class="subbody-3-1">
+                        <p><b>November 30, 2021 | 14 contributors</b></p>
+                        <h1>A tour of the C# language</h1>
+                        <p>C# (pronounced "See Sharp") is a modern, object-oriented, and type-safe programming language. C# enables developers to build many types of secure and robust applications that run in .NET. C# has its roots in the C family of languages and will be immediately familiar to C, C++, Java, and JavaScript programmers. </p>    
+                        <a href="https://docs.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/">View more -></a>            
+                    </div>
+
+                    <div class="subbody-3-2">
+                        <img src="Images/tour.jpg">
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+
+        <footer>
+            <div class="footer">
+                <div class="footer-1">
+                    <h3>Top Articles</h3>
+                    <li>
+                        Create a Website using HTML, CSS, and JS
+                    </li>
+                    <li>
+                        Blog Designation
+                    </li>
+                    <li>
+                        66 Examples Of Outstanding Blogs
+                    </li>
+                </div>
+
+                <div class="footer-2">
+                    <h3>Getting Started</h3>
+                    <li>
+                        How to Create a Website?
+                    </li>
+                    <li>
+                        How to Create a Blog?
+                    </li>
+                    <li>
+                        How to Design a Website with HTML, CSS and JS?
+                    </li>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

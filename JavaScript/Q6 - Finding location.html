@@ -1,0 +1,27 @@
+<!--Write a JS to find user location in terms of latitude and longitude-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h3>Finding Location in terms of Latitute and Longtitute</h3>
+        <p id="location"></p>
+       
+        <script>    
+            // Browser Console = navigator.geolocation.getCurrentPosition(console.log,console.error);
+        
+            var x = document.getElementById("location");
+            navigator.geolocation.getCurrentPosition(showPosition);
+
+            function showPosition(position) {
+                x.innerHTML = "Latitude: " + position.coords.latitude +
+                "<br>Longitude: " + position.coords.longitude;
+            }
+
+        </script>
+    </body>
+</html>

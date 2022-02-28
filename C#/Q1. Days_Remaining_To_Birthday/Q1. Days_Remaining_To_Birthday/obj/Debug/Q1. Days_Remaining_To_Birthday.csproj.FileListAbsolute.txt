@@ -1,0 +1,8 @@
+C:\Users\User\OneDrive - Asia Pacific University\Desktop\Doc Net\Practical Assignments\C#\Q1. Days_Remaining_To_Birthday\Q1. Days_Remaining_To_Birthday\bin\Debug\Q1.Days_Remaining_To_Birthday.exe.config
+C:\Users\User\OneDrive - Asia Pacific University\Desktop\Doc Net\Practical Assignments\C#\Q1. Days_Remaining_To_Birthday\Q1. Days_Remaining_To_Birthday\bin\Debug\Q1.Days_Remaining_To_Birthday.exe
+C:\Users\User\OneDrive - Asia Pacific University\Desktop\Doc Net\Practical Assignments\C#\Q1. Days_Remaining_To_Birthday\Q1. Days_Remaining_To_Birthday\bin\Debug\Q1.Days_Remaining_To_Birthday.pdb
+C:\Users\User\OneDrive - Asia Pacific University\Desktop\Doc Net\Practical Assignments\C#\Q1. Days_Remaining_To_Birthday\Q1. Days_Remaining_To_Birthday\obj\Debug\Q1. Days_Remaining_To_Birthday.csproj.AssemblyReference.cache
+C:\Users\User\OneDrive - Asia Pacific University\Desktop\Doc Net\Practical Assignments\C#\Q1. Days_Remaining_To_Birthday\Q1. Days_Remaining_To_Birthday\obj\Debug\Q1. Days_Remaining_To_Birthday.csproj.SuggestedBindingRedirects.cache
+C:\Users\User\OneDrive - Asia Pacific University\Desktop\Doc Net\Practical Assignments\C#\Q1. Days_Remaining_To_Birthday\Q1. Days_Remaining_To_Birthday\obj\Debug\Q1. Days_Remaining_To_Birthday.csproj.CoreCompileInputs.cache
+C:\Users\User\OneDrive - Asia Pacific University\Desktop\Doc Net\Practical Assignments\C#\Q1. Days_Remaining_To_Birthday\Q1. Days_Remaining_To_Birthday\obj\Debug\Q1.Days_Remaining_To_Birthday.exe
+C:\Users\User\OneDrive - Asia Pacific University\Desktop\Doc Net\Practical Assignments\C#\Q1. Days_Remaining_To_Birthday\Q1. Days_Remaining_To_Birthday\obj\Debug\Q1.Days_Remaining_To_Birthday.pdb

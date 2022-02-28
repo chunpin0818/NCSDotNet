@@ -1,0 +1,70 @@
+<!--Create a Login page using table -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tutorial</title>
+        <style>
+            h1{
+                background-color:beige;
+                padding:20px;              
+            }
+            #table1{
+                font-family:'Courier New', Courier, monospace;
+                border-collapse:collapse;
+                width:100%;
+                background-color:aliceblue;
+                height:150px;
+            }
+            
+            #table1 th,td{
+                border:2px solid black;  
+            }
+
+            #table1 th:hover,td:hover{
+                background-color:antiquewhite;
+            }
+
+            #table1 td{
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Login Page</h1>
+        <form id="form1" method="post">
+            <table id="table1">
+                <tr>
+                    <th>
+                        Username:
+                    </th>
+                    <th>
+                        Password:
+                    </th>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="text" id="username" value="Enter your Username">
+                    </td>
+                    <td>
+                        <input type="text" id="password" value="Enter your Password">
+                    </td>
+                </tr>           
+            </table>
+            <br><button type="button" onclick="myFunction()">Submit</button>
+        </form>
+        <p id="u1"></p>
+        <p id="p1"></p>
+
+        <script>
+            function myFunction(){
+                document.getElementById("u1").innerHTML="Login Username: "+document.getElementById("username").value;
+                document.getElementById("p1").innerHTML="Login Password: "+document.getElementById("password").value;
+            }
+        </script>
+
+    </body>
+</html>

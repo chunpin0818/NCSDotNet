@@ -1,0 +1,52 @@
+<!--Creating a Responsive pages for Home, Login, Registration and Contact us -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Page</title>
+    <style>
+        *{
+            box-sizing:border-box;
+        }
+        .flexbox{
+            display:flex;
+            flex-direction:row;
+            text-align:center;
+            flex-wrap:wrap;
+            justify-content:;
+        }
+        [class*=flexbox-]{
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size:larger;
+            background-color:beige;
+            padding:20px;
+            flex:20%;         
+        }
+        [class*=flexbox-]:hover{
+            background-color:black;
+            color:white;
+        }
+        @media screen and (max-width:500px){
+            .flexbox{
+                flex-direction:column;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Responsive Page</h1>
+    <div class="flexbox">
+        <div class="flexbox-1">Home</div>
+        <div class="flexbox-2">About Us</div>
+        <div class="flexbox-3">Products</div>
+        <div class="flexbox-4">News</div>
+        <div class="flexbox-4">Contact Us</div>
+    </div>
+    <br><section>NCS Sales And Services Sdn. Bhd.(360134-K) Was established in 1989. We specialize in provide hardware and software solutions.</section>
+
+
+</body>
+</html>

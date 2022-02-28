@@ -1,0 +1,28 @@
+<!--Write a JavaScript program to find the area of a triangle where lengths of the three of 
+    its sides are 5, 6, 7. -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS Q2</title>
+    </head>
+    <body>
+        <h1>Calculating the Area of Triangle.</h1>
+        <h3>The sides of triangle are: 5, 6, 7.</h3><br>
+        <p><b>Formula to Calculate p (Semi Perimeter) = (Side1+Side2+Side3) /2</b></p>
+        <p><b>Formula to Calculate the Area of Triangle = SQRT[p(p-side1)(p-side2)(p-side3)]</b></p>
+        <p id="p1"></p>
+        <p id="result" style="color:red"></p>
+    </body>
+
+    <script>
+        let sp=(5+6+7)/2
+        document.getElementById("p1").innerHTML="p(Semi perimeter)="+sp;
+        
+        let triarea=Math.sqrt((sp)*(sp-5)*(sp-6)*(sp-7))
+        triarea=triarea.toFixed(2)
+        document.getElementById("result").innerHTML="Area of Triangle ="+triarea
+    </script>
+</html>

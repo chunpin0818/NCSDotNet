@@ -1,0 +1,96 @@
+<!--Create a Contact us Page with a Functionality of Form  -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Us</title>
+        <style>
+            *{
+                box-sizing:border-box;
+            }
+            .flex-menubar{
+                display:flex;
+                flex-direction:row;
+            }
+            [class*=flex-menubar-]{
+                float:left;
+                background-color:#fcb900;
+                text-align:center;
+                flex-wrap:wrap;
+                align-items:center;
+                padding:10px;  
+                flex:50%;             
+                font-size:larger;
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+
+            [class *=flex-menubar-]:hover{
+                color:gray;
+            }
+
+            header{
+                width:100%;
+                height:100%;
+                height:50px;
+            }
+            #form1 {
+                width:100%;
+            }
+            .Column{
+                float:left;
+                width:33%;
+                height:70px;
+                background-color: black;
+                color:white;
+                text-align:center;
+            }
+            input{
+                border:1px solid gray;
+                border-radius:10%;
+            }
+            
+            
+        </style>
+    </head>
+
+    <header class="flex-menubar">
+        <div class="flex-menubar-1"><img src="NCSLOGO.png" height="40" href="https://ncs.com.my/"></div>
+        <div class="flex-menubar-2">PRODUCTS</div>
+        <div class="flex-menubar-3">WHAT'S NEW</div>
+        <div class="flex-menubar-4">ABOUT US</div>
+        <div class="flex-menubar-5">CONTACT US</div>
+        <div class="flex-menubar-6"><input type="search" value="Search for Products"></div>
+        <div class="flex-menubar-7">LOGIN/REGISTER</div>
+    </header>
+
+    <body>
+        <h1>Contact Us</h1>
+        <form id="form1" target="_blank" method="get">
+            First Name: <input type="text" id="fname" required>
+            Last Name: <input type="text" id="lname" required><br><br>
+            Email: <input type="email" id="email" required><br><br>
+            Phone Number: <input type="phone" id="phone" pattern=[0-9]11><br><br>
+            Company: <input type="text" id="company" required><br><br>        
+            <br><br><textarea name="msg"  rows='5' cols='35'>Your Message</textarea>
+            <br><input type="checkbox" required> I'm Not a Robot<br><br>
+            <input type="reset">
+            <input type="submit">
+        </form><br><br><br><br>
+
+        <footer>
+            <div class="Column">
+                <p>© NCS SALES & SERVICES SDN BHD</p>
+            </div>
+                
+            <div class="Column">
+                <p>Tel+123 12312312</p>
+            </div>
+
+            <div class="Column">
+                <p>Location : 5 Ang Mo Kio Street 62, NCS Hub, Singapore 569141</p>
+            </div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,41 @@
+<!--Write a JavaScript program to display the current day and time in the following format.  -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS Q1</title>
+    </head>
+    <body>
+        <h1>Current Date & Time:</h1>
+        <p id="date"></p>
+        <p id="time"></p>
+        
+    </body>
+
+    <script>
+        const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+        const date=new Date();
+        
+        document.getElementById("date").innerHTML="Today is : "+ weekday[date.getDay()];
+        AMPM();
+
+        function AMPM(){
+            if (date.getHours()>12){
+                let hours=date.getHours()-12
+                document.getElementById("time").innerHTML="Current Time is : "+hours+" PM : "+date.getMinutes()+" : "+date.getSeconds();
+            }
+            else if(date.getHours()==12){
+                document.getElementById("time").innerHTML="Current Time is : "+date.getHours()+" PM : "+date.getMinutes()+" : "+date.getSeconds();
+            }
+            else if(date.getHours()==0){
+                let hours=12
+                document.getElementById("time").innerHTML="Current Time is : "+hours+" AM : "+date.getMinutes()+" : "+date.getSeconds();
+            }
+            else{
+                document.getElementById("time").innerHTML="Current Time is : "+date.getHours()+" AM : "+date.getMinutes()+" : "+date.getSeconds();
+            }
+        } 
+    </script>
+</html>
