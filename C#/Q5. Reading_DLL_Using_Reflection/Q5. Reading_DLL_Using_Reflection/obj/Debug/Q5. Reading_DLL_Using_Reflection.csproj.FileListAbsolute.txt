@@ -1,0 +1,7 @@
+C:\Users\User\OneDrive - Asia Pacific University\Desktop\Doc Net\Practical Assignments\C#\Q5. Reading_DLL_Using_Reflection\Q5. Reading_DLL_Using_Reflection\bin\Debug\Q5.Reading_DLL_Using_Reflection.pdb
+C:\Users\User\OneDrive - Asia Pacific University\Desktop\Doc Net\Practical Assignments\C#\Q5. Reading_DLL_Using_Reflection\Q5. Reading_DLL_Using_Reflection\obj\Debug\Q5. Reading_DLL_Using_Reflection.csproj.AssemblyReference.cache
+C:\Users\User\OneDrive - Asia Pacific University\Desktop\Doc Net\Practical Assignments\C#\Q5. Reading_DLL_Using_Reflection\Q5. Reading_DLL_Using_Reflection\obj\Debug\Q5. Reading_DLL_Using_Reflection.csproj.CoreCompileInputs.cache
+C:\Users\User\OneDrive - Asia Pacific University\Desktop\Doc Net\Practical Assignments\C#\Q5. Reading_DLL_Using_Reflection\Q5. Reading_DLL_Using_Reflection\obj\Debug\Q5.Reading_DLL_Using_Reflection.pdb
+C:\Users\User\OneDrive - Asia Pacific University\Desktop\Doc Net\Practical Assignments\C#\Q5. Reading_DLL_Using_Reflection\Q5. Reading_DLL_Using_Reflection\bin\Debug\Q5.Reading_DLL_Using_Reflection.dll.config
+C:\Users\User\OneDrive - Asia Pacific University\Desktop\Doc Net\Practical Assignments\C#\Q5. Reading_DLL_Using_Reflection\Q5. Reading_DLL_Using_Reflection\bin\Debug\Q5.Reading_DLL_Using_Reflection.dll
+C:\Users\User\OneDrive - Asia Pacific University\Desktop\Doc Net\Practical Assignments\C#\Q5. Reading_DLL_Using_Reflection\Q5. Reading_DLL_Using_Reflection\obj\Debug\Q5.Reading_DLL_Using_Reflection.dll
