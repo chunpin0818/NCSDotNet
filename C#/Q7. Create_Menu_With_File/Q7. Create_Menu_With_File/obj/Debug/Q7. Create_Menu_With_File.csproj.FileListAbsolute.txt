@@ -1,0 +1,8 @@
+C:\Users\User\OneDrive - Asia Pacific University\Desktop\Doc Net\Practical Assignments\C#\Q7. Create_Menu_With_File\Q7. Create_Menu_With_File\bin\Debug\Q7.Create_Menu_With_File.exe.config
+C:\Users\User\OneDrive - Asia Pacific University\Desktop\Doc Net\Practical Assignments\C#\Q7. Create_Menu_With_File\Q7. Create_Menu_With_File\bin\Debug\Q7.Create_Menu_With_File.exe
+C:\Users\User\OneDrive - Asia Pacific University\Desktop\Doc Net\Practical Assignments\C#\Q7. Create_Menu_With_File\Q7. Create_Menu_With_File\bin\Debug\Q7.Create_Menu_With_File.pdb
+C:\Users\User\OneDrive - Asia Pacific University\Desktop\Doc Net\Practical Assignments\C#\Q7. Create_Menu_With_File\Q7. Create_Menu_With_File\obj\Debug\Q7. Create_Menu_With_File.csproj.AssemblyReference.cache
+C:\Users\User\OneDrive - Asia Pacific University\Desktop\Doc Net\Practical Assignments\C#\Q7. Create_Menu_With_File\Q7. Create_Menu_With_File\obj\Debug\Q7. Create_Menu_With_File.csproj.SuggestedBindingRedirects.cache
+C:\Users\User\OneDrive - Asia Pacific University\Desktop\Doc Net\Practical Assignments\C#\Q7. Create_Menu_With_File\Q7. Create_Menu_With_File\obj\Debug\Q7. Create_Menu_With_File.csproj.CoreCompileInputs.cache
+C:\Users\User\OneDrive - Asia Pacific University\Desktop\Doc Net\Practical Assignments\C#\Q7. Create_Menu_With_File\Q7. Create_Menu_With_File\obj\Debug\Q7.Create_Menu_With_File.exe
+C:\Users\User\OneDrive - Asia Pacific University\Desktop\Doc Net\Practical Assignments\C#\Q7. Create_Menu_With_File\Q7. Create_Menu_With_File\obj\Debug\Q7.Create_Menu_With_File.pdb
