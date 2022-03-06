@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Q7. Create_Menu_With_File", "Q7. Create_Menu_With_File\Q7. Create_Menu_With_File.csproj", "{4364D6A2-F786-41EB-9F76-60094EB0DA54}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4364D6A2-F786-41EB-9F76-60094EB0DA54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4364D6A2-F786-41EB-9F76-60094EB0DA54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4364D6A2-F786-41EB-9F76-60094EB0DA54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4364D6A2-F786-41EB-9F76-60094EB0DA54}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FD3ADB44-E143-4672-BEBC-79873FCDA603}
+	EndGlobalSection
+EndGlobal
