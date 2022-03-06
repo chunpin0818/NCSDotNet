@@ -1,0 +1,9 @@
+C:\Users\User\OneDrive - Asia Pacific University\Desktop\Doc Net\Practical Assignments\C#\Q8. Read_Write_ExcelFile\Q8. Read_Write_ExcelFile\bin\Debug\Q8.Read_Write_ExcelFile.exe.config
+C:\Users\User\OneDrive - Asia Pacific University\Desktop\Doc Net\Practical Assignments\C#\Q8. Read_Write_ExcelFile\Q8. Read_Write_ExcelFile\bin\Debug\Q8.Read_Write_ExcelFile.exe
+C:\Users\User\OneDrive - Asia Pacific University\Desktop\Doc Net\Practical Assignments\C#\Q8. Read_Write_ExcelFile\Q8. Read_Write_ExcelFile\bin\Debug\Q8.Read_Write_ExcelFile.pdb
+C:\Users\User\OneDrive - Asia Pacific University\Desktop\Doc Net\Practical Assignments\C#\Q8. Read_Write_ExcelFile\Q8. Read_Write_ExcelFile\obj\Debug\Q8. Read_Write_ExcelFile.csproj.AssemblyReference.cache
+C:\Users\User\OneDrive - Asia Pacific University\Desktop\Doc Net\Practical Assignments\C#\Q8. Read_Write_ExcelFile\Q8. Read_Write_ExcelFile\obj\Debug\Q8. Read_Write_ExcelFile.csproj.SuggestedBindingRedirects.cache
+C:\Users\User\OneDrive - Asia Pacific University\Desktop\Doc Net\Practical Assignments\C#\Q8. Read_Write_ExcelFile\Q8. Read_Write_ExcelFile\obj\Debug\Q8. Read_Write_ExcelFile.csproj.ResolveComReference.cache
+C:\Users\User\OneDrive - Asia Pacific University\Desktop\Doc Net\Practical Assignments\C#\Q8. Read_Write_ExcelFile\Q8. Read_Write_ExcelFile\obj\Debug\Q8. Read_Write_ExcelFile.csproj.CoreCompileInputs.cache
+C:\Users\User\OneDrive - Asia Pacific University\Desktop\Doc Net\Practical Assignments\C#\Q8. Read_Write_ExcelFile\Q8. Read_Write_ExcelFile\obj\Debug\Q8.Read_Write_ExcelFile.exe
+C:\Users\User\OneDrive - Asia Pacific University\Desktop\Doc Net\Practical Assignments\C#\Q8. Read_Write_ExcelFile\Q8. Read_Write_ExcelFile\obj\Debug\Q8.Read_Write_ExcelFile.pdb
