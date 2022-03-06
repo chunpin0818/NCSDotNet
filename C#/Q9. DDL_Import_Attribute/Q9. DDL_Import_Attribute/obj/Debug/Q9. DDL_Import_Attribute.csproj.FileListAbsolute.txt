@@ -1,8 +1,0 @@
-C:\Users\User\OneDrive - Asia Pacific University\Desktop\Doc Net\Practical Assignments\C#\Q9. DDL_Import_Attribute\Q9. DDL_Import_Attribute\bin\Debug\Q9.DDL_Import_Attribute.exe.config
-C:\Users\User\OneDrive - Asia Pacific University\Desktop\Doc Net\Practical Assignments\C#\Q9. DDL_Import_Attribute\Q9. DDL_Import_Attribute\bin\Debug\Q9.DDL_Import_Attribute.exe
-C:\Users\User\OneDrive - Asia Pacific University\Desktop\Doc Net\Practical Assignments\C#\Q9. DDL_Import_Attribute\Q9. DDL_Import_Attribute\bin\Debug\Q9.DDL_Import_Attribute.pdb
-C:\Users\User\OneDrive - Asia Pacific University\Desktop\Doc Net\Practical Assignments\C#\Q9. DDL_Import_Attribute\Q9. DDL_Import_Attribute\obj\Debug\Q9. DDL_Import_Attribute.csproj.AssemblyReference.cache
-C:\Users\User\OneDrive - Asia Pacific University\Desktop\Doc Net\Practical Assignments\C#\Q9. DDL_Import_Attribute\Q9. DDL_Import_Attribute\obj\Debug\Q9. DDL_Import_Attribute.csproj.SuggestedBindingRedirects.cache
-C:\Users\User\OneDrive - Asia Pacific University\Desktop\Doc Net\Practical Assignments\C#\Q9. DDL_Import_Attribute\Q9. DDL_Import_Attribute\obj\Debug\Q9. DDL_Import_Attribute.csproj.CoreCompileInputs.cache
-C:\Users\User\OneDrive - Asia Pacific University\Desktop\Doc Net\Practical Assignments\C#\Q9. DDL_Import_Attribute\Q9. DDL_Import_Attribute\obj\Debug\Q9.DDL_Import_Attribute.exe
-C:\Users\User\OneDrive - Asia Pacific University\Desktop\Doc Net\Practical Assignments\C#\Q9. DDL_Import_Attribute\Q9. DDL_Import_Attribute\obj\Debug\Q9.DDL_Import_Attribute.pdb
