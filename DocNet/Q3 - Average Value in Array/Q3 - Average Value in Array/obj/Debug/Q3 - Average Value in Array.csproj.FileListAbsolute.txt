@@ -1,0 +1,8 @@
+C:\Users\User\OneDrive - Asia Pacific University\Desktop\Doc Net\Practical Assignments\DocNet\Q3 - Average Value in Array\Q3 - Average Value in Array\bin\Debug\Q3 - Average Value in Array.exe.config
+C:\Users\User\OneDrive - Asia Pacific University\Desktop\Doc Net\Practical Assignments\DocNet\Q3 - Average Value in Array\Q3 - Average Value in Array\bin\Debug\Q3 - Average Value in Array.exe
+C:\Users\User\OneDrive - Asia Pacific University\Desktop\Doc Net\Practical Assignments\DocNet\Q3 - Average Value in Array\Q3 - Average Value in Array\bin\Debug\Q3 - Average Value in Array.pdb
+C:\Users\User\OneDrive - Asia Pacific University\Desktop\Doc Net\Practical Assignments\DocNet\Q3 - Average Value in Array\Q3 - Average Value in Array\obj\Debug\Q3 - Average Value in Array.csproj.AssemblyReference.cache
+C:\Users\User\OneDrive - Asia Pacific University\Desktop\Doc Net\Practical Assignments\DocNet\Q3 - Average Value in Array\Q3 - Average Value in Array\obj\Debug\Q3 - Average Value in Array.csproj.SuggestedBindingRedirects.cache
+C:\Users\User\OneDrive - Asia Pacific University\Desktop\Doc Net\Practical Assignments\DocNet\Q3 - Average Value in Array\Q3 - Average Value in Array\obj\Debug\Q3 - Average Value in Array.csproj.CoreCompileInputs.cache
+C:\Users\User\OneDrive - Asia Pacific University\Desktop\Doc Net\Practical Assignments\DocNet\Q3 - Average Value in Array\Q3 - Average Value in Array\obj\Debug\Q3 - Average Value in Array.exe
+C:\Users\User\OneDrive - Asia Pacific University\Desktop\Doc Net\Practical Assignments\DocNet\Q3 - Average Value in Array\Q3 - Average Value in Array\obj\Debug\Q3 - Average Value in Array.pdb
