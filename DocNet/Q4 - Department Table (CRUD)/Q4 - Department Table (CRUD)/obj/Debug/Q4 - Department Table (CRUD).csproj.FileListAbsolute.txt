@@ -1,0 +1,16 @@
+C:\Users\User\OneDrive - Asia Pacific University\Desktop\Doc Net\Week 4\Day 20\Q4 - Department Table (CRUD)\Q4 - Department Table (CRUD)\obj\Debug\Q4 - Department Table (CRUD).csproj.AssemblyReference.cache
+C:\Users\User\OneDrive - Asia Pacific University\Desktop\Doc Net\Week 4\Day 20\Q4 - Department Table (CRUD)\Q4 - Department Table (CRUD)\obj\Debug\Q4 - Department Table (CRUD).csproj.SuggestedBindingRedirects.cache
+C:\Users\User\OneDrive - Asia Pacific University\Desktop\Doc Net\Week 4\Day 20\Q4 - Department Table (CRUD)\Q4 - Department Table (CRUD)\obj\Debug\Q4 - Department Table (CRUD).csproj.CoreCompileInputs.cache
+C:\Users\User\OneDrive - Asia Pacific University\Desktop\Doc Net\Week 4\Day 20\Q4 - Department Table (CRUD)\Q4 - Department Table (CRUD)\bin\Debug\Q4 - Department Table (CRUD).exe.config
+C:\Users\User\OneDrive - Asia Pacific University\Desktop\Doc Net\Week 4\Day 20\Q4 - Department Table (CRUD)\Q4 - Department Table (CRUD)\bin\Debug\Q4 - Department Table (CRUD).exe
+C:\Users\User\OneDrive - Asia Pacific University\Desktop\Doc Net\Week 4\Day 20\Q4 - Department Table (CRUD)\Q4 - Department Table (CRUD)\bin\Debug\Q4 - Department Table (CRUD).pdb
+C:\Users\User\OneDrive - Asia Pacific University\Desktop\Doc Net\Week 4\Day 20\Q4 - Department Table (CRUD)\Q4 - Department Table (CRUD)\obj\Debug\Q4 - Department Table (CRUD).exe
+C:\Users\User\OneDrive - Asia Pacific University\Desktop\Doc Net\Week 4\Day 20\Q4 - Department Table (CRUD)\Q4 - Department Table (CRUD)\obj\Debug\Q4 - Department Table (CRUD).pdb
+C:\Users\User\OneDrive - Asia Pacific University\Desktop\Doc Net\Practical Assignments\DocNet\Q4 - Department Table (CRUD)\Q4 - Department Table (CRUD)\obj\Debug\Q4 - Department Table (CRUD).csproj.AssemblyReference.cache
+C:\Users\User\OneDrive - Asia Pacific University\Desktop\Doc Net\Practical Assignments\DocNet\Q4 - Department Table (CRUD)\Q4 - Department Table (CRUD)\obj\Debug\Q4 - Department Table (CRUD).csproj.SuggestedBindingRedirects.cache
+C:\Users\User\OneDrive - Asia Pacific University\Desktop\Doc Net\Practical Assignments\DocNet\Q4 - Department Table (CRUD)\Q4 - Department Table (CRUD)\obj\Debug\Q4 - Department Table (CRUD).csproj.CoreCompileInputs.cache
+C:\Users\User\OneDrive - Asia Pacific University\Desktop\Doc Net\Practical Assignments\DocNet\Q4 - Department Table (CRUD)\Q4 - Department Table (CRUD)\obj\Debug\Q4 - Department Table (CRUD).exe
+C:\Users\User\OneDrive - Asia Pacific University\Desktop\Doc Net\Practical Assignments\DocNet\Q4 - Department Table (CRUD)\Q4 - Department Table (CRUD)\obj\Debug\Q4 - Department Table (CRUD).pdb
+C:\Users\User\OneDrive - Asia Pacific University\Desktop\Doc Net\Practical Assignments\DocNet\Q4 - Department Table (CRUD)\Q4 - Department Table (CRUD)\bin\Debug\Q4 - Department Table (CRUD).exe.config
+C:\Users\User\OneDrive - Asia Pacific University\Desktop\Doc Net\Practical Assignments\DocNet\Q4 - Department Table (CRUD)\Q4 - Department Table (CRUD)\bin\Debug\Q4 - Department Table (CRUD).exe
+C:\Users\User\OneDrive - Asia Pacific University\Desktop\Doc Net\Practical Assignments\DocNet\Q4 - Department Table (CRUD)\Q4 - Department Table (CRUD)\bin\Debug\Q4 - Department Table (CRUD).pdb
