@@ -1,0 +1,514 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="NCS2020Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Actor">
+          <Key>
+            <PropertyRef Name="actor_Id" />
+          </Key>
+          <Property Name="actor_Id" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="actor_Fname" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="actor_Lname" Type="varchar" MaxLength="50" />
+          <Property Name="actor_gender" Type="varchar" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="AGENTS">
+          <Key>
+            <PropertyRef Name="AGENT_CODE" />
+          </Key>
+          <Property Name="AGENT_CODE" Type="char" MaxLength="6" Nullable="false" />
+          <Property Name="AGENT_NAME" Type="char" MaxLength="50" />
+          <Property Name="WORKING_AREA" Type="char" MaxLength="40" />
+          <Property Name="COMMISSION" Type="varchar" MaxLength="10" />
+          <Property Name="PHONE_NO" Type="char" MaxLength="20" />
+          <Property Name="COUNTRY" Type="varchar" MaxLength="25" />
+        </EntityType>
+        <EntityType Name="CUSTOMER">
+          <Key>
+            <PropertyRef Name="CUST_CODE" />
+          </Key>
+          <Property Name="CUST_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CUST_CODE" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="CUST_CITY" Type="char" MaxLength="25" />
+          <Property Name="AGENT_CODE" Type="char" MaxLength="6" />
+          <Property Name="ORDER_ID" Type="int" />
+        </EntityType>
+        <EntityType Name="Department">
+          <Key>
+            <PropertyRef Name="Dept_ID" />
+          </Key>
+          <Property Name="Dept_ID" Type="int" Nullable="false" />
+          <Property Name="Dept_Name" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Employee">
+          <Key>
+            <PropertyRef Name="Emp_Id" />
+          </Key>
+          <Property Name="Emp_Id" Type="int" Nullable="false" />
+          <Property Name="Emp_Name" Type="varchar" MaxLength="50" />
+          <Property Name="Emp_Age" Type="int" />
+          <Property Name="Emp_Email" Type="varchar" MaxLength="50" />
+          <Property Name="Emp_DateofJoining" Type="date" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'NCS2020.dbo.Invoice' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="Invoice">
+          <Key>
+            <PropertyRef Name="Invoice_No" />
+          </Key>
+          <Property Name="Invoice_No" Type="int" Nullable="false" />
+          <Property Name="Amount" Type="varchar" MaxLength="30" />
+          <Property Name="OrderDate" Type="date" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6013: The table/view 'NCS2020.dbo.items' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="items">
+          <Property Name="date" Type="date" />
+          <Property Name="item" Type="varchar" MaxLength="50" />
+        </EntityType>-->
+        <EntityType Name="Movie">
+          <Key>
+            <PropertyRef Name="movie_Name" />
+          </Key>
+          <Property Name="movie_Id" Type="int" Nullable="false" />
+          <Property Name="actor_Id" Type="varchar" MaxLength="10" />
+          <Property Name="movie_Name" Type="varchar" MaxLength="25" Nullable="false" />
+          <Property Name="movie_Year" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Orders">
+          <Key>
+            <PropertyRef Name="OrderID" />
+          </Key>
+          <Property Name="OrderID" Type="int" Nullable="false" />
+          <Property Name="OrderNumber" Type="int" Nullable="false" />
+          <Property Name="AGENT_CODE" Type="char" MaxLength="6" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'NCS2020.dbo.PERSON' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="PERSON">
+          <Key>
+            <PropertyRef Name="ID" />
+            <PropertyRef Name="LastName" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="LastName" Type="varchar" MaxLength="25" Nullable="false" />
+          <Property Name="FirstName" Type="varchar" MaxLength="25" />
+          <Property Name="Age" Type="int" />
+          <Property Name="Country" Type="varchar" MaxLength="25" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="principal_id" Type="int" Nullable="false" />
+          <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="version" Type="int" />
+          <Property Name="definition" Type="varbinary(max)" />
+        </EntityType>
+        <Association Name="FK__CUSTOMER__AGENT___412EB0B6">
+          <End Role="AGENTS" Type="Self.AGENTS" Multiplicity="0..1" />
+          <End Role="CUSTOMER" Type="Self.CUSTOMER" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AGENTS">
+              <PropertyRef Name="AGENT_CODE" />
+            </Principal>
+            <Dependent Role="CUSTOMER">
+              <PropertyRef Name="AGENT_CODE" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__CUSTOMER__ORDER___4222D4EF">
+          <End Role="Orders" Type="Self.Orders" Multiplicity="0..1" />
+          <End Role="CUSTOMER" Type="Self.CUSTOMER" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Orders">
+              <PropertyRef Name="OrderID" />
+            </Principal>
+            <Dependent Role="CUSTOMER">
+              <PropertyRef Name="ORDER_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Movie__actor_Id__07C12930">
+          <End Role="Actor" Type="Self.Actor" Multiplicity="0..1" />
+          <End Role="Movie" Type="Self.Movie" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Actor">
+              <PropertyRef Name="actor_Id" />
+            </Principal>
+            <Dependent Role="Movie">
+              <PropertyRef Name="actor_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Orders__AGENT_CO__3E52440B">
+          <End Role="AGENTS" Type="Self.AGENTS" Multiplicity="0..1" />
+          <End Role="Orders" Type="Self.Orders" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AGENTS">
+              <PropertyRef Name="AGENT_CODE" />
+            </Principal>
+            <Dependent Role="Orders">
+              <PropertyRef Name="AGENT_CODE" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="NCS2020ModelStoreContainer">
+          <EntitySet Name="Actor" EntityType="Self.Actor" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="AGENTS" EntityType="Self.AGENTS" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CUSTOMER" EntityType="Self.CUSTOMER" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Department" EntityType="Self.Department" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Employee" EntityType="Self.Employee" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Movie" EntityType="Self.Movie" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Orders" EntityType="Self.Orders" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Invoice" EntityType="Self.Invoice" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [Invoice].[Invoice_No] AS [Invoice_No], 
+    [Invoice].[Amount] AS [Amount], 
+    [Invoice].[OrderDate] AS [OrderDate]
+    FROM [dbo].[Invoice] AS [Invoice]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="PERSON" EntityType="Self.PERSON" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [PERSON].[ID] AS [ID], 
+    [PERSON].[LastName] AS [LastName], 
+    [PERSON].[FirstName] AS [FirstName], 
+    [PERSON].[Age] AS [Age], 
+    [PERSON].[Country] AS [Country]
+    FROM [dbo].[PERSON] AS [PERSON]</DefiningQuery>
+          </EntitySet>
+          <AssociationSet Name="FK__CUSTOMER__AGENT___412EB0B6" Association="Self.FK__CUSTOMER__AGENT___412EB0B6">
+            <End Role="AGENTS" EntitySet="AGENTS" />
+            <End Role="CUSTOMER" EntitySet="CUSTOMER" />
+          </AssociationSet>
+          <AssociationSet Name="FK__CUSTOMER__ORDER___4222D4EF" Association="Self.FK__CUSTOMER__ORDER___4222D4EF">
+            <End Role="Orders" EntitySet="Orders" />
+            <End Role="CUSTOMER" EntitySet="CUSTOMER" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Movie__actor_Id__07C12930" Association="Self.FK__Movie__actor_Id__07C12930">
+            <End Role="Actor" EntitySet="Actor" />
+            <End Role="Movie" EntitySet="Movie" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Orders__AGENT_CO__3E52440B" Association="Self.FK__Orders__AGENT_CO__3E52440B">
+            <End Role="AGENTS" EntitySet="AGENTS" />
+            <End Role="Orders" EntitySet="Orders" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="NCS2020Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Actor">
+          <Key>
+            <PropertyRef Name="actor_Id" />
+          </Key>
+          <Property Name="actor_Id" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="actor_Fname" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="actor_Lname" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="actor_gender" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Movies" Relationship="Self.FK__Movie__actor_Id__07C12930" FromRole="Actor" ToRole="Movie" />
+        </EntityType>
+        <EntityType Name="AGENT">
+          <Key>
+            <PropertyRef Name="AGENT_CODE" />
+          </Key>
+          <Property Name="AGENT_CODE" Type="String" MaxLength="6" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="AGENT_NAME" Type="String" MaxLength="50" FixedLength="true" Unicode="false" />
+          <Property Name="WORKING_AREA" Type="String" MaxLength="40" FixedLength="true" Unicode="false" />
+          <Property Name="COMMISSION" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="PHONE_NO" Type="String" MaxLength="20" FixedLength="true" Unicode="false" />
+          <Property Name="COUNTRY" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="CUSTOMERs" Relationship="Self.FK__CUSTOMER__AGENT___412EB0B6" FromRole="AGENTS" ToRole="CUSTOMER" />
+          <NavigationProperty Name="Orders" Relationship="Self.FK__Orders__AGENT_CO__3E52440B" FromRole="AGENTS" ToRole="Orders" />
+        </EntityType>
+        <EntityType Name="CUSTOMER">
+          <Key>
+            <PropertyRef Name="CUST_CODE" />
+          </Key>
+          <Property Name="CUST_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CUST_CODE" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CUST_CITY" Type="String" MaxLength="25" FixedLength="true" Unicode="false" />
+          <Property Name="AGENT_CODE" Type="String" MaxLength="6" FixedLength="true" Unicode="false" />
+          <Property Name="ORDER_ID" Type="Int32" />
+          <NavigationProperty Name="AGENT" Relationship="Self.FK__CUSTOMER__AGENT___412EB0B6" FromRole="CUSTOMER" ToRole="AGENTS" />
+          <NavigationProperty Name="Order" Relationship="Self.FK__CUSTOMER__ORDER___4222D4EF" FromRole="CUSTOMER" ToRole="Orders" />
+        </EntityType>
+        <EntityType Name="Department">
+          <Key>
+            <PropertyRef Name="Dept_ID" />
+          </Key>
+          <Property Name="Dept_ID" Type="Int32" Nullable="false" />
+          <Property Name="Dept_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Employee">
+          <Key>
+            <PropertyRef Name="Emp_Id" />
+          </Key>
+          <Property Name="Emp_Id" Type="Int32" Nullable="false" />
+          <Property Name="Emp_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Emp_Age" Type="Int32" />
+          <Property Name="Emp_Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Emp_DateofJoining" Type="DateTime" Precision="0" />
+        </EntityType>
+        <EntityType Name="Movie">
+          <Key>
+            <PropertyRef Name="movie_Name" />
+          </Key>
+          <Property Name="movie_Id" Type="Int32" Nullable="false" />
+          <Property Name="actor_Id" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="movie_Name" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="movie_Year" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Actor" Relationship="Self.FK__Movie__actor_Id__07C12930" FromRole="Movie" ToRole="Actor" />
+        </EntityType>
+        <EntityType Name="Order">
+          <Key>
+            <PropertyRef Name="OrderID" />
+          </Key>
+          <Property Name="OrderID" Type="Int32" Nullable="false" />
+          <Property Name="OrderNumber" Type="Int32" Nullable="false" />
+          <Property Name="AGENT_CODE" Type="String" MaxLength="6" FixedLength="true" Unicode="false" />
+          <NavigationProperty Name="AGENT" Relationship="Self.FK__Orders__AGENT_CO__3E52440B" FromRole="Orders" ToRole="AGENTS" />
+          <NavigationProperty Name="CUSTOMERs" Relationship="Self.FK__CUSTOMER__ORDER___4222D4EF" FromRole="Orders" ToRole="CUSTOMER" />
+        </EntityType>
+        <EntityType Name="sysdiagram">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="principal_id" Type="Int32" Nullable="false" />
+          <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="Int32" />
+          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="Invoice">
+          <Key>
+            <PropertyRef Name="Invoice_No" />
+          </Key>
+          <Property Name="Invoice_No" Type="Int32" Nullable="false" />
+          <Property Name="Amount" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="OrderDate" Type="DateTime" Precision="0" />
+        </EntityType>
+        <EntityType Name="PERSON">
+          <Key>
+            <PropertyRef Name="ID" />
+            <PropertyRef Name="LastName" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="LastName" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="FirstName" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+          <Property Name="Age" Type="Int32" />
+          <Property Name="Country" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <Association Name="FK__Movie__actor_Id__07C12930">
+          <End Role="Actor" Type="Self.Actor" Multiplicity="0..1" />
+          <End Role="Movie" Type="Self.Movie" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Actor">
+              <PropertyRef Name="actor_Id" />
+            </Principal>
+            <Dependent Role="Movie">
+              <PropertyRef Name="actor_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__CUSTOMER__AGENT___412EB0B6">
+          <End Role="AGENTS" Type="Self.AGENT" Multiplicity="0..1" />
+          <End Role="CUSTOMER" Type="Self.CUSTOMER" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AGENTS">
+              <PropertyRef Name="AGENT_CODE" />
+            </Principal>
+            <Dependent Role="CUSTOMER">
+              <PropertyRef Name="AGENT_CODE" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Orders__AGENT_CO__3E52440B">
+          <End Role="AGENTS" Type="Self.AGENT" Multiplicity="0..1" />
+          <End Role="Orders" Type="Self.Order" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AGENTS">
+              <PropertyRef Name="AGENT_CODE" />
+            </Principal>
+            <Dependent Role="Orders">
+              <PropertyRef Name="AGENT_CODE" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__CUSTOMER__ORDER___4222D4EF">
+          <End Role="Orders" Type="Self.Order" Multiplicity="0..1" />
+          <End Role="CUSTOMER" Type="Self.CUSTOMER" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Orders">
+              <PropertyRef Name="OrderID" />
+            </Principal>
+            <Dependent Role="CUSTOMER">
+              <PropertyRef Name="ORDER_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="NCS2020Entities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Actors" EntityType="Self.Actor" />
+          <EntitySet Name="AGENTS" EntityType="Self.AGENT" />
+          <EntitySet Name="CUSTOMERs" EntityType="Self.CUSTOMER" />
+          <EntitySet Name="Departments" EntityType="Self.Department" />
+          <EntitySet Name="Employees" EntityType="Self.Employee" />
+          <EntitySet Name="Movies" EntityType="Self.Movie" />
+          <EntitySet Name="Orders" EntityType="Self.Order" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+          <EntitySet Name="Invoices" EntityType="Self.Invoice" />
+          <EntitySet Name="People" EntityType="Self.PERSON" />
+          <AssociationSet Name="FK__Movie__actor_Id__07C12930" Association="Self.FK__Movie__actor_Id__07C12930">
+            <End Role="Actor" EntitySet="Actors" />
+            <End Role="Movie" EntitySet="Movies" />
+          </AssociationSet>
+          <AssociationSet Name="FK__CUSTOMER__AGENT___412EB0B6" Association="Self.FK__CUSTOMER__AGENT___412EB0B6">
+            <End Role="AGENTS" EntitySet="AGENTS" />
+            <End Role="CUSTOMER" EntitySet="CUSTOMERs" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Orders__AGENT_CO__3E52440B" Association="Self.FK__Orders__AGENT_CO__3E52440B">
+            <End Role="AGENTS" EntitySet="AGENTS" />
+            <End Role="Orders" EntitySet="Orders" />
+          </AssociationSet>
+          <AssociationSet Name="FK__CUSTOMER__ORDER___4222D4EF" Association="Self.FK__CUSTOMER__ORDER___4222D4EF">
+            <End Role="Orders" EntitySet="Orders" />
+            <End Role="CUSTOMER" EntitySet="CUSTOMERs" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="NCS2020ModelStoreContainer" CdmEntityContainer="NCS2020Entities">
+          <EntitySetMapping Name="Actors">
+            <EntityTypeMapping TypeName="NCS2020Model.Actor">
+              <MappingFragment StoreEntitySet="Actor">
+                <ScalarProperty Name="actor_Id" ColumnName="actor_Id" />
+                <ScalarProperty Name="actor_Fname" ColumnName="actor_Fname" />
+                <ScalarProperty Name="actor_Lname" ColumnName="actor_Lname" />
+                <ScalarProperty Name="actor_gender" ColumnName="actor_gender" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="AGENTS">
+            <EntityTypeMapping TypeName="NCS2020Model.AGENT">
+              <MappingFragment StoreEntitySet="AGENTS">
+                <ScalarProperty Name="AGENT_CODE" ColumnName="AGENT_CODE" />
+                <ScalarProperty Name="AGENT_NAME" ColumnName="AGENT_NAME" />
+                <ScalarProperty Name="WORKING_AREA" ColumnName="WORKING_AREA" />
+                <ScalarProperty Name="COMMISSION" ColumnName="COMMISSION" />
+                <ScalarProperty Name="PHONE_NO" ColumnName="PHONE_NO" />
+                <ScalarProperty Name="COUNTRY" ColumnName="COUNTRY" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CUSTOMERs">
+            <EntityTypeMapping TypeName="NCS2020Model.CUSTOMER">
+              <MappingFragment StoreEntitySet="CUSTOMER">
+                <ScalarProperty Name="CUST_ID" ColumnName="CUST_ID" />
+                <ScalarProperty Name="CUST_CODE" ColumnName="CUST_CODE" />
+                <ScalarProperty Name="CUST_CITY" ColumnName="CUST_CITY" />
+                <ScalarProperty Name="AGENT_CODE" ColumnName="AGENT_CODE" />
+                <ScalarProperty Name="ORDER_ID" ColumnName="ORDER_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Departments">
+            <EntityTypeMapping TypeName="NCS2020Model.Department">
+              <MappingFragment StoreEntitySet="Department">
+                <ScalarProperty Name="Dept_ID" ColumnName="Dept_ID" />
+                <ScalarProperty Name="Dept_Name" ColumnName="Dept_Name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Employees">
+            <EntityTypeMapping TypeName="NCS2020Model.Employee">
+              <MappingFragment StoreEntitySet="Employee">
+                <ScalarProperty Name="Emp_Id" ColumnName="Emp_Id" />
+                <ScalarProperty Name="Emp_Name" ColumnName="Emp_Name" />
+                <ScalarProperty Name="Emp_Age" ColumnName="Emp_Age" />
+                <ScalarProperty Name="Emp_Email" ColumnName="Emp_Email" />
+                <ScalarProperty Name="Emp_DateofJoining" ColumnName="Emp_DateofJoining" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Movies">
+            <EntityTypeMapping TypeName="NCS2020Model.Movie">
+              <MappingFragment StoreEntitySet="Movie">
+                <ScalarProperty Name="movie_Id" ColumnName="movie_Id" />
+                <ScalarProperty Name="actor_Id" ColumnName="actor_Id" />
+                <ScalarProperty Name="movie_Name" ColumnName="movie_Name" />
+                <ScalarProperty Name="movie_Year" ColumnName="movie_Year" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Orders">
+            <EntityTypeMapping TypeName="NCS2020Model.Order">
+              <MappingFragment StoreEntitySet="Orders">
+                <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+                <ScalarProperty Name="OrderNumber" ColumnName="OrderNumber" />
+                <ScalarProperty Name="AGENT_CODE" ColumnName="AGENT_CODE" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="sysdiagrams">
+            <EntityTypeMapping TypeName="NCS2020Model.sysdiagram">
+              <MappingFragment StoreEntitySet="sysdiagrams">
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="definition" ColumnName="definition" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Invoices">
+            <EntityTypeMapping TypeName="NCS2020Model.Invoice">
+              <MappingFragment StoreEntitySet="Invoice">
+                <ScalarProperty Name="Invoice_No" ColumnName="Invoice_No" />
+                <ScalarProperty Name="Amount" ColumnName="Amount" />
+                <ScalarProperty Name="OrderDate" ColumnName="OrderDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="People">
+            <EntityTypeMapping TypeName="NCS2020Model.PERSON">
+              <MappingFragment StoreEntitySet="PERSON">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="Age" ColumnName="Age" />
+                <ScalarProperty Name="Country" ColumnName="Country" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
