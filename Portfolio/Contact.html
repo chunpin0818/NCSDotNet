@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact</title>
+        <link rel="icon" type="image/x-icon" href="Images/headerlogo.svg">
+        <link rel="stylesheet" href="Contact.css">
+        <script src="Portfolio_JS.js"></script>
+    </head>
+    <body>
+        <!--Header-->
+        <header>
+            <div class="menubar">
+                <div class="menubar-navigation-1"><a href="index.html" target="_blank"><img src="Images/myportfolio.png"></a></div>
+                <div class="menubar-navigation-2"><a href="index.html" target="_blank">Home</a></div>
+                <div class="menubar-navigation-3"><a href="About.html" target="_blank">About</a></div>
+                <div class="menubar-navigation-4"><a href="Services.html" target="_blank">Services</a></div>
+                <div class="menubar-navigation-5"><a href="Contact.html">Contact</a></div>
+            </div>
+        </header>
+        
+        <section class="head">
+            <h1>Contact Me</h1>
+            <img src="Images/background.jpg">  
+        </section>
+        
+        <div class="body">
+            <div class="body-1">
+                <form id="form1" action="index.html" onsubmit="submit_Form()">
+                    <label class="element" >Name<span>*</span>:<br></label> 
+                    <input id="name" class="Input" type="text" required><br><br>
+
+                    <label class="element" >Industry<span>*</span>:<br></label> 
+                    <input id="industry" class="Input"  type="text" required><br><br>
+
+                    <label class="element" >Email<span>*</span>:<br></label> 
+                    <input id="email" class="Input"  type="email" required><br><br>
+
+                    <label class="element" >Phone Number:<br></label> 
+                    <input id="phone" class="Input"  type="tel"><br><br>
+
+                    <label class="element">Message:</label>
+                    <textarea id="message"  rows='10' cols='75' style="border:3px solid gainsboro;border-radius: 7px;">Nice to Meet You :)</textarea><br>
+
+                    <input type="checkbox" required><label>I'm not a Robot<span>*</span></label> <br>
+                    
+                    <br><input class="button" type="Reset" value="Reset All" style="background-color:red">
+                    <button type="Submit" class="button"  style="background-color:orange">Submit</button>
+                </form>
+            </div>
+            <div class="body-2">
+                <img src="Images/contactme.png">
+            </div>
+        </div>
+
+        <!--Footer-->
+        <footer class="footer">
+            <img src="Images/myportfolio.png">
+            <p id="footer-p1"><b>chunpin0818@outlook.com</b></p>
+            <p id="footer-p2"><b>Contact Number: (+60) 18-874 6469</b></p>
+            <div class="footer-1">
+                <p><b>Stay Connected:</b></p>
+                <a href="https://www.facebook.com/jb534/" target="_blank"><img src="Images/facebook.png" ></a>
+                <a href="https://github.com/chunpin0818" target="_blank"><img src="Images/github.png"></a>
+                <a href="https://www.instagram.com/jb534/" target="_blank"><img src="Images/instagram.png"></a>
+                <a href="https://www.linkedin.com/in/chun-pin-goh-23093721b/" target="_blank"><img src="Images/linkedin.png"></a>
+            </div>
+        </footer>        
+    </body>
+</html>
